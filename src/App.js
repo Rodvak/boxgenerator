@@ -9,15 +9,15 @@ function App() {
   const [colorBoxes, setColorBoxes] = useState([]);
 
   // THis function is called in the boxForm and we passed it with props from parent to child.
-  const handleNewBox= (newBox) => {
+  const handleNewBox = (newBox) => {
     setColorBoxes([...colorBoxes, newBox])
   }
 
   // Here I am putting all of the pops inside each component. NOTICE I am passing handleNewBox to the BOxForm & colorBoxes array to the BoxDisplay component.
   return (
     <div className="App">
-    <BoxForm onNewBox={handleNewBox}/>
-    <BoxDisplay colorBoxes={colorBoxes}/>
+      <BoxForm onNewBox={handleNewBox} />
+      <BoxDisplay colorBoxes={colorBoxes} />
 
     </div>
   );
