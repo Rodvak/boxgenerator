@@ -4,7 +4,7 @@ import React from "react";
 const BoxDisplay = (props) => {
   return (
     // I am using the array and maping it to get all the values inside of itself. Remember you need the key i always.
-    <div className="mt-5" style={{ display: "flex", flexWrap: "wrap" }}>
+    <div className="mt-5 " style={{ display: "flex", flexWrap: "wrap" }}>
       {props.colorBoxes.map((box, i) => {
         return (
           <div
