@@ -14,12 +14,11 @@ const BoxForm = (props) => {
   };
 
   return (
-    <div>
       <div className="container mt-5">
         <div className="row">
           <div className="col"></div>
           <div className="col bg-light border border-dark rounded border-5 p-5 shadow p-3 mb-5 bg-body rounded font-monospace">
-            {/* handleSubmit gets called  whenever we submit a form */}
+            {/* handleSubmit gets calle-d  whenever we submit a form */}
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label className="form-label">Color Box: </label>
@@ -48,7 +47,6 @@ const BoxForm = (props) => {
           <div className="col"></div>
         </div>
       </div>
-    </div>
   );
 };
 
