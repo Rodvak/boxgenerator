@@ -16,7 +16,7 @@ function App() {
   // Here I am putting all of the pops inside each component. NOTICE I am passing handleNewBox to the BOxForm & colorBoxes array to the BoxDisplay component.
   return (
     <div className="App">
-      <BoxForm onNewBox={handleNewBox} />
+      <BoxForm handleNewBox={handleNewBox} />
       <BoxDisplay colorBoxes={colorBoxes} />
 
     </div>

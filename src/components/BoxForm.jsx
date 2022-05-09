@@ -9,7 +9,7 @@ const BoxForm = (props) => {
   // This function handles the submit form onSubmit(). I used the preventD to prevent refreshings and called handleNewBox from the parent which takes a parameter and adds the box to the colorBoxes array. After that I cleared the input.
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onNewBox({ color: colorBox, size: boxSize });
+    props.handleNewBox({ color: colorBox, size: boxSize });
     setColorBox("");
   };
 
